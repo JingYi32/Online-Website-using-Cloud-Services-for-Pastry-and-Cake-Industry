@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDAC_Assignment", "DDAC_Assignment\DDAC_Assignment.csproj", "{8A18ABC1-AA1C-4DE3-80E4-36D7AA6A5DFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A18ABC1-AA1C-4DE3-80E4-36D7AA6A5DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A18ABC1-AA1C-4DE3-80E4-36D7AA6A5DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A18ABC1-AA1C-4DE3-80E4-36D7AA6A5DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A18ABC1-AA1C-4DE3-80E4-36D7AA6A5DFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0CA92B5E-2E0A-4145-816B-29D42A07BC08}
+	EndGlobalSection
+EndGlobal
