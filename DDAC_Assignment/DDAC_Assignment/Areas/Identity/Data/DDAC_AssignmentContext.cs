@@ -16,6 +16,8 @@ namespace DDAC_Assignment.Data
         {
         }
 
+        public DbSet<DDAC_Assignment.Models.Order> Order { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
