@@ -1,0 +1,101 @@
+﻿@model Order
+@{
+    ViewData["Title"] = "editOrderPage";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orders</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="~/css/style.css">
+
+</head>
+<body>
+    <div class="heading">
+        <h3>Order @Model.OrderID</h3>
+    </div>
+
+    <section class="orderItem">
+        <form asp-action="processEditOrderPage" asp-controller="OrderList" method="post">
+            <table width="100%">
+                <tr>
+                    <th width="20%"><label asp-for="@Model.OrderID"></label></th>
+                    <td width="80%"><input asp-for="@Model.OrderID" readonly /></td>
+                </tr>
+                <tr>
+                    <th width="20%"><label asp-for="@Model.DatePlacedOn"></label></th>
+                    <td width="80%"><input asp-for="@Model.DatePlacedOn" readonly /></td>
+                </tr>
+            </table>
+            <div class="box-container" style="margin-top: 10px">
+
+                <div class="box">
+                    <h4>Order Details</h4>
+                    <input type="hidden" asp-for="@Model.UserID" />
+                    <input type="hidden" asp-for="@Model.TotalPrice" />
+                    <table width="100%">
+                        <tr>
+                            <th width="20%"><label asp-for="@Model.PaymentMethod"></label></th>
+                            <td width="80%"><input asp-for="@Model.PaymentMethod" readonly /></td>
+                        <tr>
+                        <tr>
+                            <th width="20%"><label asp-for="@Model.PaymentStatus"></label></th>
+                            <td width="80%">
+                                <select asp-for="@Model.PaymentStatus">
+                                    <option value="Unpaid">Unpaid</option>
+                                    <option value="Failed">Failed</option>
+                                    <option value="Pending">Pending</option>
+                                    <option value="Completed">Completed</option>
+                                    <option value="Canceled">Canceled</option>
+                                    <option value="Refunding">Refunding</option>
+                                    <option value="Refunded">Refunded</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th width="20%"><label asp-for="@Model.DeliveryContact"></label></th>
+                            <td width="80%"><input asp-for="@Model.DeliveryContact" readonly /></td>
+                        </tr>
+                        <tr>
+                            <th width="20%"><label asp-for="@Model.DeliveryAddress"></label></th>
+                            <td width="80%"><input asp-for="@Model.DeliveryAddress" readonly /></td>
+                        </tr>
+                        <tr>
+                            <th width="20%"><label asp-for="@Model.DeliveryStatus"></label></th>
+                            <td width="80%">
+                                <select asp-for="@Model.DeliveryStatus">
+                                    <option value="Ordered">Ordered</option>
+                                    <option value="Packing">Packing</option>
+                                    <option value="Packed">Packed</option>
+                                    <option value="Shipping">Shipping</option>
+                                    <option value="Shipped">Shipped</option>
+                                    <option value="In Transit">In Transit</option>
+                                    <option value="Delivered">Delivered</option>
+                                    <option value="Returning">Returning</option>
+                                    <option value="Returned">Returned</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th width="20%"><label asp-for="@Model.EstimatedArrivalDate"></label></th>
+                            <td width="80%"><input asp-for="@Model.EstimatedArrivalDate" readonly /></td>
+                        </tr>
+                        <tr>
+                            <th colspan="2" style="text-align:center"><button type="submit" class="btn btn-primary">Edit Order Status</button></th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
+
