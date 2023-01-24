@@ -13,6 +13,7 @@ namespace DDAC_Assignment.Models
         public int OrderID { get; set; }
         public int ProductID { get; set; }
         public int ProductQuantity { get; set; }
+        public decimal ProductUnitPrice { get; set; }
         public string ProductName { get; set; }
         public int OrderRating { get; set; }
         public string OrderComment { get; set; }

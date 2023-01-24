@@ -38,7 +38,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 95%;
     overflow-x: hidden;
     scroll-behavior: smooth;
     stop-opacity: 7rem;
@@ -759,11 +759,24 @@ section {
         font-size: 1.8rem;
     }
 
+.orderItem .box-container {
+    display: flex;
+    gap:1.5rem;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+    .orderItem .box-container .box {
+        padding: 1rem 2rem;
+        border: var(--border);
+        width:100%;
+    }
+
 .orders .box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
     .orders .box-container .box {
@@ -775,7 +788,7 @@ section {
         .orders .box-container .box p {
             line-height: 1.5;
             margin: 1rem 0;
-            font-size: 2rem;
+            font-size: 1rem;
             color: var(--light-color);
         }
 

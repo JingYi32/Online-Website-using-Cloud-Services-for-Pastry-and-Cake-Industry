@@ -22,14 +22,83 @@
     <div class="heading">
         <h3>Order @Model.order.OrderID</h3>
     </div>
-    <section class="orders">
-        <p>ID: @Model.order.OrderID</p>
-        <p>Placed On: @Model.order.DatePlacedOn</p>
-        <div class="box-container">
+    <section class="orderItem">
+        <table width="100%">
+            <tr>
+                <th width="20%">ID</th>
+                <td width="80%"> @Model.order.OrderID</td>
+            </tr>
+            <tr>
+                <th width="20%">Placed On</th>
+                <td width="80%"> @Model.order.DatePlacedOn</td>
+            </tr>
+        </table>
+        <div class="box-container" style="margin-top: 10px">
+
+            <div class="box">
+                <h4>Order Details</h4>
+                <table width="100%">
+                    <tr>
+                        <th width="20%">Payment Method</th>
+                        <td width="80%">@Model.order.PaymentMethod</td>
+                    <tr>
+                    <tr>
+                        <th width="20%">Payment Status</th>
+                        <td width="80%">@Model.order.PaymentStatus</td>
+                    </tr>
+                    <tr>
+                        <th width="20%">Delivery Contact</th>
+                        <td width="80%">@Model.order.DeliveryContact</td>
+                    </tr>
+                    <tr>
+                        <th width="20%">Delivery Address</th>
+                        <td width="80%">@Model.order.DeliveryAddress</td>
+                    </tr>
+                    <tr>
+                        <th width="20%">Delivery Status</th>
+                        <td width="80%">@Model.order.DeliveryStatus</td>
+                    </tr>
+                    <tr>
+                        <th width="20%">Estimated Arrival Date</th>
+                        <td width="80%">@Model.order.EstimatedArrivalDate.ToShortDateString()</td>
+                    </tr>
+                </table>
+            </div>
 
             <div class="box">
                 <h4>Order Items</h4>
-
+                <table width="100%">
+                    <thead>
+                        <tr>
+                            <th width="10%">Qty</th>
+                            <th width="40%">Product Name</th>
+                            <th width="15%">Unit Price</th>
+                            <th width="15%">Sub Total</th>
+                            <th width="20%"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var orderproduct in Model.orderProducts)
+                        {
+                            <tr>
+                                <td>@orderproduct.ProductQuantity</td>
+                                <td>@orderproduct.ProductName</td>
+                                <td>RM @orderproduct.ProductUnitPrice</td>
+                                @{
+                                    var subproductprice = orderproduct.ProductQuantity * orderproduct.ProductUnitPrice;
+                                }
+                                <td>RM @subproductprice</td>
+                                <td>Rate Product</td>
+                            </tr>
+                        }
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td style="font-weight: bold" colspan="3" align="right">Total</td>
+                            <td style="font-weight: bold" colspan="2" align="center">RM @Model.order.TotalPrice</td>
+                        </tr>
+                    </tfoot>
+                </table>
             </div>
         </div>
 
