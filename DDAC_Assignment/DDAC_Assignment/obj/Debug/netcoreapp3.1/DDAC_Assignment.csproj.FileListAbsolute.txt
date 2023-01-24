@@ -355,7 +355,6 @@ D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Deb
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\DDAC_Assignment.genruntimeconfig.cache
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\DDAC_Assignment.pdb
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\DDAC_Assignment.Views.pdb
-D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\DDAC_Assignment.csproj.AssemblyReference.cache
 C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\DDAC_Assignment.StaticWebAssets.xml
@@ -545,3 +544,8 @@ C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignm
 C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\AWSSDK.SimpleNotificationService.dll
 C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\Razor\Views\SNS\broadcastMessagePage.cshtml.g.cs
 C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\Razor\Views\SNS\Index.cshtml.g.cs
+D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\AWSSDK.Core.dll
+D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\AWSSDK.SimpleNotificationService.dll
+D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\Razor\Views\SNS\broadcastMessagePage.cshtml.g.cs
+D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\Razor\Views\SNS\Index.cshtml.g.cs
