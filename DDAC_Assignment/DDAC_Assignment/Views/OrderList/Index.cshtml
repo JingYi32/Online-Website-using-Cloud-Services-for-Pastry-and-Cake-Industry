@@ -26,16 +26,18 @@
         <div class="box-container">
             @foreach (var singleOrder in Model)
             {
-                <div class="box">
+                <a asp-action="SingleOrderPage" asp-route-OrderID="@singleOrder.OrderID">
+                    <div class="box">
 
-                    <p>Order ID: @singleOrder.OrderID</p>
-                    <p>placed on: @singleOrder.DatePlacedOn</p>
-                    <p>Contact Number: @singleOrder.DeliveryContact></p>
-                    <p>Delivery Address: @singleOrder.DeliveryAddress</p>
-                    <p>Payment Method: @singleOrder.PaymentMethod</p>
-                    <p>Payment Status: @singleOrder.PaymentStatus</p>
+                        <p>Order ID: @singleOrder.OrderID</p>
+                        <p>placed on: @singleOrder.DatePlacedOn</p>
+                        <p>Contact Number: @singleOrder.DeliveryContact></p>
+                        <p>Delivery Address: @singleOrder.DeliveryAddress</p>
+                        <p>Payment Method: @singleOrder.PaymentMethod</p>
+                        <p>Payment Status: @singleOrder.PaymentStatus</p>
 
-                </div>
+                    </div>
+                </a>
             }
 
 

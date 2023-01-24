@@ -1,0 +1,38 @@
+﻿@model OrderFullInfo
+@{
+    ViewData["Title"] = "SingleOrderPage";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orders</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="~/css/style.css">
+
+</head>
+<body>
+    <div class="heading">
+        <h3>Order @Model.order.OrderID</h3>
+    </div>
+    <section class="orders">
+        <p>ID: @Model.order.OrderID</p>
+        <p>Placed On: @Model.order.DatePlacedOn</p>
+        <div class="box-container">
+
+            <div class="box">
+                <h4>Order Items</h4>
+
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
