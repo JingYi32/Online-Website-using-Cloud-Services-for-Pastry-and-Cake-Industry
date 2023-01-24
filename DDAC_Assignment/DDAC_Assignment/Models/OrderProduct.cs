@@ -12,9 +12,9 @@ namespace DDAC_Assignment.Models
         public int OrderProductID { get; set; }
         public int OrderID { get; set; }
         public int ProductID { get; set; }
-        public int Quantity { get; set; }
+        public int ProductQuantity { get; set; }
         public string ProductName { get; set; }
-        public int Rating { get; set; }
+        public int OrderRating { get; set; }
         public string OrderComment { get; set; }
     }
 }
