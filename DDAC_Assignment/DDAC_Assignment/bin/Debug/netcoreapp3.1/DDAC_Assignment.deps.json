@@ -31,6 +31,7 @@
     ".NETCoreApp,Version=v3.1": {
       "DDAC_Assignment/1.0.0": {
         "dependencies": {
+          "AWSSDK.SimpleNotificationService": "3.7.100.60",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.32",
           "Microsoft.AspNetCore.Identity.UI": "3.1.32",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.32",
@@ -305,6 +306,31 @@
         },
         "compile": {
           "DDAC_Assignment.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.103.21": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.103.21"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.SimpleNotificationService/3.7.100.60": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.103.21"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.100.60"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll": {}
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.32": {
@@ -1453,11 +1479,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.ComponentModel.Annotations/4.7.0": {
-        "compile": {
-          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
-        }
-      },
+      "System.ComponentModel.Annotations/4.7.0": {},
       "System.ComponentModel.Primitives/4.3.0": {
         "dependencies": {
           "System.ComponentModel": "4.3.0",
@@ -3912,6 +3934,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/3.7.103.21": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-D8Ix0+cecXhEzMxG8we8Q1jjklt2OffCcwNb/Y3C3Zk3IPwgr+fXyEQS9GZxr+4ppR/Ei1E9A9biZQLjJiDcow==",
+      "path": "awssdk.core/3.7.103.21",
+      "hashPath": "awssdk.core.3.7.103.21.nupkg.sha512"
+    },
+    "AWSSDK.SimpleNotificationService/3.7.100.60": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4p2gGsURICRlxriUnLOVEx7bNsJRJjgrlwKTAIIZ8mT4Cr3cYEH3zU7JZ+eZagYR7kq01BV3btpaUj0ArbxEhw==",
+      "path": "awssdk.simplenotificationservice/3.7.100.60",
+      "hashPath": "awssdk.simplenotificationservice.3.7.100.60.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.32": {
       "type": "package",

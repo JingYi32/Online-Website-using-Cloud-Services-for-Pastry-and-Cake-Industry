@@ -31,6 +31,15 @@ namespace DDAC_Assignment.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("CustomerDOB")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CustomerFullName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CustomerGender")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(256)")
                         .HasMaxLength(256);
@@ -71,28 +80,7 @@ namespace DDAC_Assignment.Migrations
                         .HasColumnType("nvarchar(256)")
                         .HasMaxLength(256);
 
-                    b.Property<string>("user_contact_no")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("user_dob")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("user_email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("user_gender")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("user_name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("user_password")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("user_role")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("user_username")
+                    b.Property<string>("UserRole")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

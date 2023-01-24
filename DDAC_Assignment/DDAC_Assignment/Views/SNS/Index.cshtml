@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "SNSIndex";
+}
+
+<center>
+    <h1>Subscribe SNS Topic Example</h1>
+    <br /><hr /><br />
+    <span>@ViewBag.msg</span>
+    <br />
+    <br />
+    <form method="post" asp-action="processSNSSubscription" asp-controller="SNS">
+        <label>Enter your email:</label>
+        <input type="text" name="emailAddress" class="form-control" />
+        <br /><br />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+</center>
+

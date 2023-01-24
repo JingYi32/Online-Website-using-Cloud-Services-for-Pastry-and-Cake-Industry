@@ -10,14 +10,12 @@ namespace DDAC_Assignment.Areas.Identity.Data
     public class RT_Pastry_User : IdentityUser
     {
         [PersonalData]
-        public string user_name { get; set; }
-        public string user_email { get; set; }
-        public string user_contact_no { get; set; }
-        public DateTime user_dob { get; set; }
-        public string user_gender { get; set; }
-        public string user_username { get; set; }
-        public string user_password { get; set; }
-        public string user_role { get; set; }
+        public string CustomerFullName { get; set; }
+        [PersonalData]
+        public DateTime CustomerDOB { get; set; }
+        [PersonalData]
+        public string UserRole { get; set; }
 
     }
+
 }

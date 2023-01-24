@@ -21,7 +21,7 @@ namespace DDAC_Assignment.Areas.Identity
                         context.Configuration.GetConnectionString("DDAC_AssignmentContextConnection")));
 
                 services.AddDefaultIdentity<RT_Pastry_User>(options => options.SignIn.RequireConfirmedAccount = true)
-                    .AddEntityFrameworkStores<DDAC_AssignmentContext>();
+                    .AddRoles<IdentityRole>().AddEntityFrameworkStores<DDAC_AssignmentContext>();
             });
         }
     }

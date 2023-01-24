@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace DDAC_Assignment.Areas.Identity.Pages.Account
 {
@@ -24,17 +25,21 @@ namespace DDAC_Assignment.Areas.Identity.Pages.Account
         private readonly UserManager<RT_Pastry_User> _userManager;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
         public RegisterModel(
             UserManager<RT_Pastry_User> userManager,
             SignInManager<RT_Pastry_User> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            RoleManager<IdentityRole> roleManager
+            )
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _roleManager = roleManager;
         }
 
         [BindProperty]
@@ -61,6 +66,17 @@ namespace DDAC_Assignment.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+
+            [Required]
+            [Display(Name = "Full Name")]
+            public string CustomerFullName { get; set; }
+
+            [Required]
+            [Display(Name = "Date of Birth")]
+            public DateTime CustomerDOB { get; set; }
+
+            public string UserRole { get; set; }
+
         }
 
         public async Task OnGetAsync(string returnUrl = null)
@@ -75,26 +91,38 @@ namespace DDAC_Assignment.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new RT_Pastry_User { UserName = Input.Email, Email = Input.Email };
+                var user = new RT_Pastry_User 
+                { 
+                    UserName = Input.Email, 
+                    Email = Input.Email,
+                    CustomerFullName = Input.CustomerFullName,
+                    CustomerDOB = Input.CustomerDOB,
+                    EmailConfirmed = true,
+                    UserRole = "Customer"
+                };
+
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User created a new account with password.");
+                    bool roleresult = await _roleManager.RoleExistsAsync("Admin");
 
-                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                    var callbackUrl = Url.Page(
-                        "/Account/ConfirmEmail",
-                        pageHandler: null,
-                        values: new { area = "Identity", userId = user.Id, code = code, returnUrl = returnUrl },
-                        protocol: Request.Scheme);
+                    if (!roleresult)
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole("Admin"));
+                    }
 
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                    roleresult = await _roleManager.RoleExistsAsync("Customer");
+                    if (!roleresult)
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole("Customer"));
+                    }
+
+                    //store userid and roleid into user roles table
+                    await _userManager.AddToRoleAsync(user, user.UserRole);
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
-                        return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
+                        return RedirectToPage("Login");
                     }
                     else
                     {
