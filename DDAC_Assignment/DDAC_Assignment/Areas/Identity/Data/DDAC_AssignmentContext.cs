@@ -17,6 +17,7 @@ namespace DDAC_Assignment.Data
         }
 
         public DbSet<DDAC_Assignment.Models.Order> Order { get; set; }
+        public DbSet<DDAC_Assignment.Models.OrderProduct> OrderProduct { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

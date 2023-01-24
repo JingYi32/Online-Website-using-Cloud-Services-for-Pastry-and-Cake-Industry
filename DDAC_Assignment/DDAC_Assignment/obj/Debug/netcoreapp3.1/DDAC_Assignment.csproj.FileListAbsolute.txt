@@ -309,7 +309,6 @@ D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Deb
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\DDAC_Assignment.csproj.AssemblyReference.cache
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\DDAC_Assignment.GeneratedMSBuildEditorConfig.editorconfig
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\DDAC_Assignment.AssemblyInfoInputs.cache
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\DDAC_Assignment.AssemblyInfo.cs
@@ -354,3 +353,5 @@ D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Deb
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\DDAC_Assignment.dll
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\DDAC_Assignment.pdb
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\DDAC_Assignment.genruntimeconfig.cache
+D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\Razor\Views\OrderList\Index.cshtml.g.cs
+D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\Razor\Views\OrderList\AddData.cshtml.g.cs
