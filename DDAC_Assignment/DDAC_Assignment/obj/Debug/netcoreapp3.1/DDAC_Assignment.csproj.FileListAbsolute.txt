@@ -338,7 +338,6 @@ D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Deb
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\Razor\Views\OrderList\AddData.cshtml.g.cs
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\Razor\Views\OrderList\Index.cshtml.g.cs
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\Razor\Views\OrderList\SingleOrderPage.cshtml.g.cs
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
@@ -356,3 +355,4 @@ D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Deb
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\DDAC_Assignment.genruntimeconfig.cache
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\DDAC_Assignment.pdb
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\DDAC_Assignment.Views.pdb
+D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\DDAC_Assignment.csproj.AssemblyReference.cache

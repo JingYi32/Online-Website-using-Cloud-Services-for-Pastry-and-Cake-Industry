@@ -21,8 +21,8 @@
     <div class="heading">
         <h3>Orders</h3>
     </div>
+
     <section class="orders">
-        <p><a asp-action="AddData">Add New Order Record</a></p>
         <div class="box-container">
             @foreach (var singleOrder in Model)
             {
@@ -31,7 +31,7 @@
 
                         <p>Order ID: @singleOrder.OrderID</p>
                         <p>placed on: @singleOrder.DatePlacedOn</p>
-                        <p>Contact Number: @singleOrder.DeliveryContact></p>
+                        <p>Contact Number: @singleOrder.DeliveryContact</p>
                         <p>Delivery Address: @singleOrder.DeliveryAddress</p>
                         <p>Payment Method: @singleOrder.PaymentMethod</p>
                         <p>Payment Status: @singleOrder.PaymentStatus</p>

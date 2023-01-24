@@ -22,6 +22,10 @@
     <div class="heading">
         <h3>Order @Model.order.OrderID</h3>
     </div>
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-action="editPage" asp-route-FlowerID="@Model.order.OrderID">Edit</a>
+    }
     <section class="orderItem">
         <table width="100%">
             <tr>

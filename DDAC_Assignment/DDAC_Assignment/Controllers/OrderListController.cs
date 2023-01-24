@@ -24,11 +24,6 @@ namespace DDAC_Assignment.Controllers
             return View(order);
         }
 
-        public IActionResult AddData()
-        {
-            return View();
-        }
-
         public async Task<IActionResult> SingleOrderPage(int ? OrderID)
         {
             if(OrderID == null)
