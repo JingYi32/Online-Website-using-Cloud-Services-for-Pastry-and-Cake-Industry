@@ -1,0 +1,41 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "editAction";
+}
+
+<link rel="stylesheet" href="../css/Admin.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<center>
+    <section class="update-product">
+
+        <h1 class="heading">Update product</h1>
+        <form asp-action="processEditPage" asp-controller="Products" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="pid" value="@Model.ProductID" readonly>
+            <input type="hidden" name="old_image" value="@Model.ProductS3Key">
+            <img src="@Model.ProductURL" alt="">
+
+            <span>Update name</span>
+            <input type="text" required placeholder="Enter product name" name="ProductName" maxlength="100" class="box" value="@Model.ProductName">
+
+            <span>Update price</span>
+            <input type="number" min="0" max="9999999999" required placeholder="Enter product price" name="price" onkeypress="if(this.value.length == 10) return false;" class="box" value="@Model.ProductPrice">
+
+            <span>Update category</span>
+            <select name="category" class="box" required>
+                @*<option selected value="@Model.ProductType">@Model.ProductType</option>*@
+                <option value="cake">Cake</option>
+                <option value="pastry">Pastry</option>
+            </select>
+
+            <span>Update image</span>
+            <input type="file" name="image" class="box" accept="image/jpg, image/jpeg, image/png, image/webp" required>
+            <div class="flex-btn">
+                <input type="submit" value="update" class="btn" name="update">
+                <a href="javascript: history.go(-1)" class="option-btn">go back</a>
+            </div>
+        </form>
+
+    </section>
+</center>
+

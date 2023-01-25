@@ -6,6 +6,7 @@ using DDAC_Assignment.Areas.Identity.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using DDAC_Assignment.Models;
 
 namespace DDAC_Assignment.Data
 {
@@ -16,8 +17,10 @@ namespace DDAC_Assignment.Data
         {
         }
 
-        public DbSet<DDAC_Assignment.Models.Order> Order { get; set; }
-        public DbSet<DDAC_Assignment.Models.OrderProduct> OrderProduct { get; set; }
+        public DbSet<Product> Product { get; set; }
+        public DbSet<Cart> Cart { get; set; }
+        public DbSet<Order> Order { get; set; }
+        public DbSet<OrderProduct> OrderProduct { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

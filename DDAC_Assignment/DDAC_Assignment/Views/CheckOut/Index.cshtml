@@ -1,0 +1,63 @@
+﻿@model List<Cart>
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" href="../css/Customer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<center>
+    <div class="heading">
+        <h3>checkout</h3>
+        <p><a href="/">home</a> <span> / checkout</span></p>
+    </div>
+
+    <section class="checkout">
+
+        <h1 class="title">order summary</h1>
+
+        <form asp-action="CheckOut" method="post">
+
+            <div class="cart-items">
+                <h3>cart items</h3>
+                @foreach (var singleCart in Model)
+                {
+                    //Display current User's Cart
+                    if (singleCart.UserID == 123)
+                    {
+                        <p><span class="name">@singleCart.ProductName</span><span class="price">$@singleCart.ProductSubTotal</span></p>
+                    }
+                }
+                <p class="grand-total"><span class="name">Grand total :</span><span class="price" id="total">$@ViewBag.total</span></p>
+                <a href="/Cart" class="btn">view cart</a>
+
+            </div>
+
+            <div class="user-info">
+                <h2>Date placed: <span id="datetime"></span></h2>
+                <script>
+                    var dt = new Date();
+                    document.getElementById("datetime").innerHTML = dt.toLocaleString();
+                </script>
+                <h2>Est Arrival: <span id="est"></span></h2>
+                <script>
+                    var dt = new Date();
+                    dt.setMinutes(dt.getMinutes() + 30);
+                    document.getElementById("est").innerHTML = dt.toLocaleString();
+                </script>
+
+                <h3>Delivery Information</h3>
+                <input type="text" class="box" placeholder="Enter your phone number" required maxlength="15" name="DeliveryContact">
+                <input type="text" class="box" placeholder="Enter your address" required maxlength="500" name="DeliveryAddress">
+                <select name="PaymentMethod" class="box" required>
+                    <option value="" disabled selected>-- select payment method --</option>
+                    <option value="Cash on delivery">Cash on delivery</option>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="Paypal">Paypal</option>
+                </select>
+                <input type="submit" value="place order" class="btn <?php if($fetch_profile['address'] == ''){echo 'disabled';} ?>" style="width:100%; background:var(--red); color:var(--white);" name="submit">
+            </div>
+
+        </form>
+
+    </section>
+</center>

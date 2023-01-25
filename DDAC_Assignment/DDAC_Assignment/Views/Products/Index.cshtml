@@ -1,0 +1,30 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" href="../css/Admin.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<h1>Menu</h1>
+
+<p><a asp-action="AddProduct">Add a New Product Information</a></p>
+
+<section class="show-products" style="padding-top: 0;">
+    <div class="box-container">
+        @foreach (var singleProduct in Model)
+        {
+            <div class="box">
+                <img src="@singleProduct.ProductURL" alt="">
+                <div class="flex">
+                    <div class="price"><span>$</span>@singleProduct.ProductPrice<span> / </span>@singleProduct.ProductRating★</div>
+                    <div class="category">@singleProduct.ProductType</div>
+                </div>
+                <div class="name">@singleProduct.ProductName</div>
+                <div class="flex-btn">
+                    @*<a asp-action="editAction" asp-route-ProductID="@singleProduct.ProductID" class="option-btn">update</a>*@
+                    <a asp-action="deleteAction" asp-route-ProductID="@singleProduct.ProductID" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>
+                </div>
+            </div>
+        }
+    </div>
+</section>

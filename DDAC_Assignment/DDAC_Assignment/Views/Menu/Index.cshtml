@@ -1,0 +1,45 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" href="../css/Customer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<center>
+    <section class="products">
+
+        <h1 class="title">Baked Goods</h1>
+        @*Search Goods*@
+        <section class="search-form">
+            <form method="post" action="">
+                <input type="text" name="searchString" placeholder="Search Goods..." class="box">
+                <button type="submit" name="search_btn" class="fas fa-search"></button>
+            </form>
+        </section>
+
+        <div class="box-container">
+           @foreach (var singleProduct in Model)
+            {
+            <form method="post" class="box">
+                <input type="hidden" name="ProductID" value="@singleProduct.ProductID">
+                <input type="hidden" name="ProductName" value="@singleProduct.ProductName">
+                <input type="hidden" name="ProductPrice" value="@singleProduct.ProductPrice">
+                <input type="hidden" name="ProductS3Key" value="@singleProduct.ProductS3Key">
+                <input type="hidden" name="ProductURL" value="@singleProduct.ProductURL">
+                <input type="hidden" name="UserID" value="123">
+                @*<a href="@singleProduct.ProductID" class="fas fa-eye"></a>*@
+                <button type="submit" asp-action="processCart" class="fas fa-shopping-cart" name="add_to_cart"></button>
+                <img src="@singleProduct.ProductURL" alt="">
+                <div class="cat">@singleProduct.ProductType</div>
+                <div class="name">@singleProduct.ProductName</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>@singleProduct.ProductPrice<span> / </span>@singleProduct.ProductRating★</div>
+                    <input type="number" name="ProductQuantity" class="qty" min="1" max="99" value="1" maxlength="2">
+                </div>
+            </form>
+            }
+        </div>
+
+    </section>
+</center>
+

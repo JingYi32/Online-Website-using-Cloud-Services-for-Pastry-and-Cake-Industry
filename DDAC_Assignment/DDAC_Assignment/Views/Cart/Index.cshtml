@@ -1,0 +1,43 @@
+﻿@model List<Cart>
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" href="../css/Customer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<center>
+    <section class="products">
+
+        <h1 class="title">Your cart</h1>
+
+        <div class="cart-total">
+            <p>Cart total : <span>$@ViewBag.total</span> </p>
+            <a asp-action="checkOut" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>">Checkout</a>
+        </div>
+
+        <div class="box-container">
+            @foreach (var singleCart in Model)
+            {
+                //Display current User's Cart
+                if (singleCart.UserID == 123)
+                {
+                    <form action="" method="post" class="box">
+                        <input type="hidden" name="CartID" value="@singleCart.CartID">
+                        @*<a href="quick_view.php?pid=<?= $fetch_cart['pid']; ?>" class="fas fa-eye"></a>*@
+                        <button type="submit" class="fas fa-times" name="delete" asp-action="deleteActionCart" asp-route-CartID="@singleCart.CartID" onclick="return confirm('Delete this item?');"></button>
+                        <img src="@singleCart.ProductURL" alt="">
+                        <div class="name">@singleCart.ProductName</div>
+                        <div class="flex">
+                            <div class="price"><span>$</span>@singleCart.ProductPrice</div>
+                            <input type="number" name="ProductQuantity" class="qty" min="1" max="99" value="@singleCart.ProductQuantity" maxlength="2" readonly>
+                            <button type="submit" asp-action="editActionCart" asp-route-CartID="@singleCart.CartID" class="fas fa-edit" name="update_qty"></button>
+                        </div>
+                        <div class="sub-total"> sub total : <span>$@singleCart.ProductSubTotal</span> </div>
+                    </form>
+                }
+            }
+        </div>
+
+    </section>
+</center>
+
