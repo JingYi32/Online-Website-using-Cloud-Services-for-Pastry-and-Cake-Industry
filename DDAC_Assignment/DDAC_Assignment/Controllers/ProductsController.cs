@@ -28,7 +28,7 @@ namespace DDAC_Assignment.Controllers
         }
 
         //Set S3 bucket name
-        private const string bucketname = "mvcbakeryshoptp054152";
+        private const string bucketname = "ddacassignment";
 
         //Function: Create connection to AWS Account
         private List<string> getAWSInformation()
