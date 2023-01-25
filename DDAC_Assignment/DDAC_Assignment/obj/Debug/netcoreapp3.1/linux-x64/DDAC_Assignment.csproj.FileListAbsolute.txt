@@ -146,13 +146,10 @@ D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Deb
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\linux-x64\DDAC_Assignment.TagHelpers.input.cache
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\linux-x64\DDAC_Assignment.TagHelpers.output.cache
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\linux-x64\DDAC_Assignment.RazorCoreGenerate.cache
-D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\linux-x64\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
-D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\linux-x64\Razor\Areas\Identity\Pages\Account\ForgotPassword.cshtml.g.cs
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\linux-x64\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\linux-x64\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\linux-x64\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.cshtml.g.cs
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\linux-x64\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
-D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\linux-x64\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml.g.cs
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\linux-x64\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\linux-x64\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\linux-x64\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
