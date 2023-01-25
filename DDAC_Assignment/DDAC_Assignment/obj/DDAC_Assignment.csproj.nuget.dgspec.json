@@ -46,9 +46,29 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "AWSSDK.RDS": {
+              "target": "Package",
+              "version": "[3.7.114.8, )"
+            },
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.7.101.60, )"
+            },
             "AWSSDK.SimpleNotificationService": {
               "target": "Package",
               "version": "[3.7.100.60, )"
+            },
+            "AWSXRayRecorder.Core": {
+              "target": "Package",
+              "version": "[2.13.0, )"
+            },
+            "AWSXRayRecorder.Handlers.AspNetCore": {
+              "target": "Package",
+              "version": "[2.10.0, )"
+            },
+            "AWSXRayRecorder.Handlers.AwsSdk": {
+              "target": "Package",
+              "version": "[2.11.0, )"
             },
             "Microsoft.AspNet.Identity.EntityFramework": {
               "target": "Package",

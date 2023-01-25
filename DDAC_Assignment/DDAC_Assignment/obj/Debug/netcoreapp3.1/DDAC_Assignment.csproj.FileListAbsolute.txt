@@ -555,3 +555,10 @@ D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Deb
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\EntityFramework.dll
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\Amazon.Lambda.SQSEvents.dll
+D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\AWSSDK.RDS.dll
+D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\AWSSDK.S3.dll
+D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\AWSXRayRecorder.Core.dll
+D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\AWSXRayRecorder.Handlers.AspNetCore.dll
+D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\AWSXRayRecorder.Handlers.AwsSdk.dll
+D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\DDAC_Assignment.csproj.AssemblyReference.cache

@@ -100,12 +100,16 @@
                                     var subproductprice = orderproduct.ProductQuantity * orderproduct.ProductUnitPrice;
                                 }
                                 <td>RM @subproductprice</td>
-                                <td>Rate Product</td>
-                                <td><a asp-action="Review" asp-route-OrderProductID="@orderproduct.OrderProductID">Review</a></td>
+                                @if (User.IsInRole("Customer"))
+                                {
+                                    <td><a asp-action="Review" asp-route-OrderProductID="@orderproduct.OrderProductID">Review</a></td>
+                                }
+
                             </tr>
                         }
                     </tbody>
                     <tfoot>
+                        <tr><td colspan="5" style="color: white"> f</td></tr>
                         <tr>
                             <td style="font-weight: bold" colspan="3" align="right">Total</td>
                             <td style="font-weight: bold" colspan="2" align="center">RM @Model.order.TotalPrice</td>
