@@ -522,7 +522,7 @@ section {
     }
 
         .about .row .content h3 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: var(--black);
             text-transform: capitalize;
             margin-bottom: 1rem;
@@ -531,13 +531,13 @@ section {
         .about .row .content p {
             padding: 1rem 0;
             line-height: 2;
-            font-size: 1.6rem;
+            font-size: 1.3rem;
             color: var(--light-color);
         }
 
 .steps .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: auto auto auto;
     gap: 1.5rem;
     align-items: flex-start;
 }
@@ -549,14 +549,14 @@ section {
     }
 
         .steps .box-container .box img {
-            height: 15rem;
-            width: 100%;
-            object-fit: contain;
+            height: 12rem;
+            width: 15rem;
+            object-fit: cover;
             margin-bottom: 1rem;
         }
 
         .steps .box-container .box h3 {
-            font-size: 2.3rem;
+            font-size: 2rem;
             margin: 1rem 0;
             color: var(--black);
             text-transform: capitalize;
@@ -564,7 +564,7 @@ section {
 
         .steps .box-container .box p {
             line-height: 2;
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             color: var(--light-color);
         }
 
