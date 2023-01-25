@@ -551,10 +551,6 @@ D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Deb
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\Razor\Views\OrderList\Review.cshtml.g.cs
 C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\Razor\Views\OrderList\editOrderPage.cshtml.g.cs
 C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\Razor\Views\OrderList\Review.cshtml.g.cs
-D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
-D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\EntityFramework.dll
-D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
-D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.EntityFramework.dll
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\Amazon.Lambda.SQSEvents.dll
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\AWSSDK.RDS.dll
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\AWSSDK.S3.dll
@@ -572,3 +568,4 @@ C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignm
 C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\EntityFramework.dll
 C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
 C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\aws-beanstalk-tools-defaults.json

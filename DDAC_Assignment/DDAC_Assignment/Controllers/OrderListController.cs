@@ -82,6 +82,9 @@ namespace DDAC_Assignment.Controllers
         {
             if (ModelState.IsValid)
             {
+                //_context.Order.Add(new Order { DatePlacedOn = DateTime.Now, UserID = "" });
+                //await _context.SaveChangesAsync();
+
                 _context.OrderProduct.Update(orderProduct);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index", "OrderList", new { msg = "Review is updated!" });
