@@ -44,7 +44,7 @@ namespace ddac.Controllers
         }
 
         //create subscriber page through index page
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Customer")]
         public IActionResult Index(string ? msg)
         {
             ViewBag.msg = msg;

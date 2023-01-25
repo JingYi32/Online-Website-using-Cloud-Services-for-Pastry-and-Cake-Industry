@@ -4,14 +4,16 @@
 }
 
 <center>
-    <h1>Subscribe SNS Topic Example</h1>
-    <br /><hr /><br />
+    <h1>Subscribe to RT Pastry Newsletter</h1>
+    <br />
+    <h5>Would you like to receive emails on our latest news and products? If so, leave your email down below!</h5>
+    <hr /><br />
     <span>@ViewBag.msg</span>
     <br />
     <br />
     <form method="post" asp-action="processSNSSubscription" asp-controller="SNS">
         <label>Enter your email:</label>
-        <input type="text" name="emailAddress" class="form-control" />
+        <input type="email" name="emailAddress" class="form-control" />
         <br /><br />
         <button type="submit" class="btn btn-primary">Subscribe</button>
     </form>

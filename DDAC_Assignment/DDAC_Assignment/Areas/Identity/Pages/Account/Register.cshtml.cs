@@ -72,6 +72,7 @@ namespace DDAC_Assignment.Areas.Identity.Pages.Account
             public string CustomerFullName { get; set; }
 
             [Required]
+            [DataType(DataType.Date)]
             [Display(Name = "Date of Birth")]
             public DateTime CustomerDOB { get; set; }
 
