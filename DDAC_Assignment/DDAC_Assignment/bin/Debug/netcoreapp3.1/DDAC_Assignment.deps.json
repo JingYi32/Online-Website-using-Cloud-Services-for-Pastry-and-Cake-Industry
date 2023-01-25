@@ -31,7 +31,12 @@
     ".NETCoreApp,Version=v3.1": {
       "DDAC_Assignment/1.0.0": {
         "dependencies": {
+          "AWSSDK.RDS": "3.7.114.8",
+          "AWSSDK.S3": "3.7.101.60",
           "AWSSDK.SimpleNotificationService": "3.7.100.60",
+          "AWSXRayRecorder.Core": "2.13.0",
+          "AWSXRayRecorder.Handlers.AspNetCore": "2.10.0",
+          "AWSXRayRecorder.Handlers.AwsSdk": "2.11.0",
           "Microsoft.AspNet.Identity.EntityFramework": "2.2.3",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.32",
           "Microsoft.AspNetCore.Identity.UI": "3.1.32",
@@ -309,20 +314,59 @@
           "DDAC_Assignment.dll": {}
         }
       },
-      "AWSSDK.Core/3.7.103.21": {
+      "Amazon.Lambda.SQSEvents/2.1.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Amazon.Lambda.SQSEvents.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Amazon.Lambda.SQSEvents.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.103.22": {
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.Core.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.7.103.21"
+            "fileVersion": "3.7.103.22"
           }
         },
         "compile": {
           "lib/netcoreapp3.1/AWSSDK.Core.dll": {}
         }
       },
+      "AWSSDK.RDS/3.7.114.8": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.103.22"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.RDS.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.114.8"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.RDS.dll": {}
+        }
+      },
+      "AWSSDK.S3/3.7.101.60": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.103.22"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.101.60"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {}
+        }
+      },
       "AWSSDK.SimpleNotificationService/3.7.100.60": {
         "dependencies": {
-          "AWSSDK.Core": "3.7.103.21"
+          "AWSSDK.Core": "3.7.103.22"
         },
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll": {
@@ -332,6 +376,49 @@
         },
         "compile": {
           "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll": {}
+        }
+      },
+      "AWSXRayRecorder.Core/2.13.0": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.103.22",
+          "Amazon.Lambda.SQSEvents": "2.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSXRayRecorder.Core.dll": {
+            "assemblyVersion": "2.13.0.0",
+            "fileVersion": "2.13.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSXRayRecorder.Core.dll": {}
+        }
+      },
+      "AWSXRayRecorder.Handlers.AspNetCore/2.10.0": {
+        "dependencies": {
+          "AWSXRayRecorder.Core": "2.13.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSXRayRecorder.Handlers.AspNetCore.dll": {
+            "assemblyVersion": "2.10.0.0",
+            "fileVersion": "2.10.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSXRayRecorder.Handlers.AspNetCore.dll": {}
+        }
+      },
+      "AWSXRayRecorder.Handlers.AwsSdk/2.11.0": {
+        "dependencies": {
+          "AWSXRayRecorder.Core": "2.13.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSXRayRecorder.Handlers.AwsSdk.dll": {
+            "assemblyVersion": "2.11.0.0",
+            "fileVersion": "2.11.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AWSXRayRecorder.Handlers.AwsSdk.dll": {}
         }
       },
       "EntityFramework/6.1.0": {
@@ -3978,12 +4065,33 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AWSSDK.Core/3.7.103.21": {
+    "Amazon.Lambda.SQSEvents/2.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-D8Ix0+cecXhEzMxG8we8Q1jjklt2OffCcwNb/Y3C3Zk3IPwgr+fXyEQS9GZxr+4ppR/Ei1E9A9biZQLjJiDcow==",
-      "path": "awssdk.core/3.7.103.21",
-      "hashPath": "awssdk.core.3.7.103.21.nupkg.sha512"
+      "sha512": "sha512-a1xaCIuXDleJ8iRE3vHWWhtPqUiURmoQUS68INMEQmtfHr4wTz837TQZONo4cyubv5sZj78DDrYessZEzgFRGQ==",
+      "path": "amazon.lambda.sqsevents/2.1.0",
+      "hashPath": "amazon.lambda.sqsevents.2.1.0.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.7.103.22": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i8PmSpoqBQ7TaLWxXVuX2HgeHZ/l2on6H5ObRdELTde1Ubes9AVqsgANksYBOWtMwCwl+b8AExpoKTTa88rp9w==",
+      "path": "awssdk.core/3.7.103.22",
+      "hashPath": "awssdk.core.3.7.103.22.nupkg.sha512"
+    },
+    "AWSSDK.RDS/3.7.114.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eYQVVk+8r6Kq6gvLeSpi4H58l0NpfNFdL1JXVbCWOKBk31AHmzXvZNy2umQZWDfVHNu7Dmf15k1vSWo6nZgEMg==",
+      "path": "awssdk.rds/3.7.114.8",
+      "hashPath": "awssdk.rds.3.7.114.8.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.7.101.60": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9gP680tbpfIijWEBozqZBUXjlTyZ4lrAf52tXVKY7k0eSLXbIQEZkSyhn06ERjSullhHaQI27nRAdnIU7NcAGw==",
+      "path": "awssdk.s3/3.7.101.60",
+      "hashPath": "awssdk.s3.3.7.101.60.nupkg.sha512"
     },
     "AWSSDK.SimpleNotificationService/3.7.100.60": {
       "type": "package",
@@ -3991,6 +4099,27 @@
       "sha512": "sha512-4p2gGsURICRlxriUnLOVEx7bNsJRJjgrlwKTAIIZ8mT4Cr3cYEH3zU7JZ+eZagYR7kq01BV3btpaUj0ArbxEhw==",
       "path": "awssdk.simplenotificationservice/3.7.100.60",
       "hashPath": "awssdk.simplenotificationservice.3.7.100.60.nupkg.sha512"
+    },
+    "AWSXRayRecorder.Core/2.13.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nwshtBicwFsB+TaSOzX3eG54JIfhKgRwIh5oQaO5WuQuqjehXCMdigLBgzeDhC/oRTawGwBQdNwU6My2mKX8Dg==",
+      "path": "awsxrayrecorder.core/2.13.0",
+      "hashPath": "awsxrayrecorder.core.2.13.0.nupkg.sha512"
+    },
+    "AWSXRayRecorder.Handlers.AspNetCore/2.10.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fbQVsMGTBShMoT+Gkly/QUSepYf043AAzI6cF53VG1Q4uyug6ar42Z7YJ19ZTsxoJtUyC88tJVbNT6iTyVzukw==",
+      "path": "awsxrayrecorder.handlers.aspnetcore/2.10.0",
+      "hashPath": "awsxrayrecorder.handlers.aspnetcore.2.10.0.nupkg.sha512"
+    },
+    "AWSXRayRecorder.Handlers.AwsSdk/2.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jiYrNWfYliSAJoMNx3Fv0z1ham69x53IgOvyjg3XrdHc21FP0M1oIR9nMr67IMXPLP2WQRKzge0zGOKO1Anxeg==",
+      "path": "awsxrayrecorder.handlers.awssdk/2.11.0",
+      "hashPath": "awsxrayrecorder.handlers.awssdk.2.11.0.nupkg.sha512"
     },
     "EntityFramework/6.1.0": {
       "type": "package",
