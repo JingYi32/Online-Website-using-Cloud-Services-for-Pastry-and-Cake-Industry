@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cKnWW9CANhKM55UbYZO3BuFe62gjfVn4j4rnpuDBHpqZ0ioDP9VlGPazI1YBG5Z0blfbhwE09P9v7RN5KXyktg==",
+  "dgSpecHash": "5ciBjzjQPYKni5PcdNQOw1SsDkfUajCZ5Ly9bWq8D4FLqtWuB8vMlMeQM7MOEy/F9a0WKb2ZR9u5zco+Fz2Llw==",
   "success": true,
   "projectFilePath": "D:\\User\\Documents\\GitHub\\DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment.csproj",
   "expectedPackageFiles": [
@@ -8,13 +8,10 @@
     "C:\\Users\\jingy\\.nuget\\packages\\awssdk.core\\3.7.103.22\\awssdk.core.3.7.103.22.nupkg.sha512",
     "C:\\Users\\jingy\\.nuget\\packages\\awssdk.rds\\3.7.114.8\\awssdk.rds.3.7.114.8.nupkg.sha512",
     "C:\\Users\\jingy\\.nuget\\packages\\awssdk.s3\\3.7.101.60\\awssdk.s3.3.7.101.60.nupkg.sha512",
-    "C:\\Users\\jingy\\.nuget\\packages\\awssdk.simplenotificationservice\\3.7.100.60\\awssdk.simplenotificationservice.3.7.100.60.nupkg.sha512",
+    "C:\\Users\\jingy\\.nuget\\packages\\awssdk.simplenotificationservice\\3.7.100.61\\awssdk.simplenotificationservice.3.7.100.61.nupkg.sha512",
     "C:\\Users\\jingy\\.nuget\\packages\\awsxrayrecorder.core\\2.13.0\\awsxrayrecorder.core.2.13.0.nupkg.sha512",
     "C:\\Users\\jingy\\.nuget\\packages\\awsxrayrecorder.handlers.aspnetcore\\2.10.0\\awsxrayrecorder.handlers.aspnetcore.2.10.0.nupkg.sha512",
     "C:\\Users\\jingy\\.nuget\\packages\\awsxrayrecorder.handlers.awssdk\\2.11.0\\awsxrayrecorder.handlers.awssdk.2.11.0.nupkg.sha512",
-    "C:\\Users\\jingy\\.nuget\\packages\\entityframework\\6.1.0\\entityframework.6.1.0.nupkg.sha512",
-    "C:\\Users\\jingy\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",
-    "C:\\Users\\jingy\\.nuget\\packages\\microsoft.aspnet.identity.entityframework\\2.2.3\\microsoft.aspnet.identity.entityframework.2.2.3.nupkg.sha512",
     "C:\\Users\\jingy\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.32\\microsoft.aspnetcore.cryptography.internal.3.1.32.nupkg.sha512",
     "C:\\Users\\jingy\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.32\\microsoft.aspnetcore.cryptography.keyderivation.3.1.32.nupkg.sha512",
     "C:\\Users\\jingy\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
@@ -183,36 +180,5 @@
     "C:\\Users\\jingy\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\jingy\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'EntityFramework 6.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "EntityFramework",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Identity.Core 2.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.Identity.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Identity.EntityFramework 2.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.Identity.EntityFramework",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }

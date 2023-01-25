@@ -33,11 +33,10 @@
         "dependencies": {
           "AWSSDK.RDS": "3.7.114.8",
           "AWSSDK.S3": "3.7.101.60",
-          "AWSSDK.SimpleNotificationService": "3.7.100.60",
+          "AWSSDK.SimpleNotificationService": "3.7.100.61",
           "AWSXRayRecorder.Core": "2.13.0",
           "AWSXRayRecorder.Handlers.AspNetCore": "2.10.0",
           "AWSXRayRecorder.Handlers.AwsSdk": "2.11.0",
-          "Microsoft.AspNet.Identity.EntityFramework": "2.2.3",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.32",
           "Microsoft.AspNetCore.Identity.UI": "3.1.32",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.32",
@@ -364,14 +363,14 @@
           "lib/netcoreapp3.1/AWSSDK.S3.dll": {}
         }
       },
-      "AWSSDK.SimpleNotificationService/3.7.100.60": {
+      "AWSSDK.SimpleNotificationService/3.7.100.61": {
         "dependencies": {
           "AWSSDK.Core": "3.7.103.22"
         },
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.7.100.60"
+            "fileVersion": "3.7.100.61"
           }
         },
         "compile": {
@@ -419,48 +418,6 @@
         },
         "compile": {
           "lib/netstandard2.0/AWSXRayRecorder.Handlers.AwsSdk.dll": {}
-        }
-      },
-      "EntityFramework/6.1.0": {
-        "runtime": {
-          "lib/net45/EntityFramework.SqlServer.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.1.30225.0"
-          },
-          "lib/net45/EntityFramework.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.1.30225.0"
-          }
-        },
-        "compile": {
-          "lib/net45/EntityFramework.SqlServer.dll": {},
-          "lib/net45/EntityFramework.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Identity.Core/2.2.3": {
-        "runtime": {
-          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.2.3.11125"
-          }
-        },
-        "compile": {
-          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Identity.EntityFramework/2.2.3": {
-        "dependencies": {
-          "EntityFramework": "6.1.0",
-          "Microsoft.AspNet.Identity.Core": "2.2.3"
-        },
-        "runtime": {
-          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.2.3.11125"
-          }
-        },
-        "compile": {
-          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {}
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.32": {
@@ -4097,12 +4054,12 @@
       "path": "awssdk.s3/3.7.101.60",
       "hashPath": "awssdk.s3.3.7.101.60.nupkg.sha512"
     },
-    "AWSSDK.SimpleNotificationService/3.7.100.60": {
+    "AWSSDK.SimpleNotificationService/3.7.100.61": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4p2gGsURICRlxriUnLOVEx7bNsJRJjgrlwKTAIIZ8mT4Cr3cYEH3zU7JZ+eZagYR7kq01BV3btpaUj0ArbxEhw==",
-      "path": "awssdk.simplenotificationservice/3.7.100.60",
-      "hashPath": "awssdk.simplenotificationservice.3.7.100.60.nupkg.sha512"
+      "sha512": "sha512-MtvzENdTwSH5tkLdHzdhsl5lQa7Wk08RCzNkQVzQlJ+pd1LuHfNByggQsu+lYRBqyL1/oaPAaiBnecJ2sdBRXw==",
+      "path": "awssdk.simplenotificationservice/3.7.100.61",
+      "hashPath": "awssdk.simplenotificationservice.3.7.100.61.nupkg.sha512"
     },
     "AWSXRayRecorder.Core/2.13.0": {
       "type": "package",
@@ -4124,27 +4081,6 @@
       "sha512": "sha512-jiYrNWfYliSAJoMNx3Fv0z1ham69x53IgOvyjg3XrdHc21FP0M1oIR9nMr67IMXPLP2WQRKzge0zGOKO1Anxeg==",
       "path": "awsxrayrecorder.handlers.awssdk/2.11.0",
       "hashPath": "awsxrayrecorder.handlers.awssdk.2.11.0.nupkg.sha512"
-    },
-    "EntityFramework/6.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-u/M0OEfqxTUsL5BwzD66eBGm278/ozqdLK3JvMO6QwUxxc+z7ZUkTYm4suDhWRqzkc6mOhvXDQY5dZUwbldxyQ==",
-      "path": "entityframework/6.1.0",
-      "hashPath": "entityframework.6.1.0.nupkg.sha512"
-    },
-    "Microsoft.AspNet.Identity.Core/2.2.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Mv5FpoaxspE8hlWLE4r1IdZtovg/OyFgVRhxQbx47J4sqdLImN1hnM1lnwCj+/wLmqtqFk/RYMoZ5GAcwm/00g==",
-      "path": "microsoft.aspnet.identity.core/2.2.3",
-      "hashPath": "microsoft.aspnet.identity.core.2.2.3.nupkg.sha512"
-    },
-    "Microsoft.AspNet.Identity.EntityFramework/2.2.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-dt4XZChjw3a6jE66Yd6LkF9omspxi0A9lJpwBZz8Wl1sabOS6dlLP1OOTVuUjtPaoAshjoIzvS6DFRQdPyq55g==",
-      "path": "microsoft.aspnet.identity.entityframework/2.2.3",
-      "hashPath": "microsoft.aspnet.identity.entityframework.2.2.3.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.32": {
       "type": "package",

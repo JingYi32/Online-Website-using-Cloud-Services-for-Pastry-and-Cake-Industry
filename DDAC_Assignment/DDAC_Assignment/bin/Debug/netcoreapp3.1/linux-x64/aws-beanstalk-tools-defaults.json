@@ -1,0 +1,20 @@
+
+{
+    "region" : "us-east-1",
+    "configuration" : "Debug",
+    "framework"     : "netcoreapp3.1",
+    "self-contained" : false,
+    "application"    : "DDACAssignment",
+    "environment"    : "DDACAssignment-dev",
+    "enable-xray"    : true,
+    "enhanced-health-type" : "enhanced",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-001543eaa377a2d81,sg-0bce62b9dd53f5efc\";\"aws:ec2:vpc,Subnets\"=\"subnet-0ff70415189e1da16\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.4.3 running .NET Core",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "ddacassignment-dev",
+    "instance-type"        : "t2.micro",
+    "key-pair"             : "",
+    "instance-profile"     : "LabInstanceProfile",
+    "service-role"         : "LabRole",
+    "proxy-server"         : "nginx"
+}

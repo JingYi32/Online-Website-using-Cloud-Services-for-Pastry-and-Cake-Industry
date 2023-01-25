@@ -15,7 +15,7 @@ namespace ddac.Controllers
 {
     public class SNSController : Controller
     {
-        private const string topicARN = "arn:aws:sns:us-east-1:548958161158:Newsletter";
+        private const string topicARN = "arn:aws:sns:us-east-1:197544957557:Newsletter";
 
         //create connection
         private List<string> getAWSInformation()
