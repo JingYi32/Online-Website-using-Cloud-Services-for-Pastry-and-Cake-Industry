@@ -2,7 +2,52 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="heading">
+    <h3>RT Pastry</h3>
+    <p>Pride in Every Bite</p>
 </div>
+
+<section class="about">
+    <div class="row">
+        <div class="image">
+            <img src="images/about-img.svg" alt="">
+        </div>
+        <div class="content">
+            <h3>Why choose Us?</h3>
+            <p>Being able to combine “eating” with artistic creation, every day’s work can bring myself a sense of happiness and satisfaction. What could be happier than this?</p>
+            <p>This is how the founder of RT Pastry Mr. Lu Jian Wei (also known as Master Lu) pursuit of.</p>
+            <p>When Master Lu was young, he worked in many fields and engaged in various industries, but only in baking industry brought him a completely different new experience.</p>
+            <a class="btn" asp-area="" asp-controller="Home" asp-action="Index">Our Catalogue</a>
+            @*change controller and action to the product page*@
+        </div>
+
+    </div>
+
+</section>
+
+<section class="steps">
+
+    <h4 class="title">What We Produce</h4>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/bread.jpg" alt="">
+            <h3>Assorted Bread</h3>
+            <p>Bread for one or a whole loaf for a family - Freshly baked daily.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/cake.jpg" alt="">
+            <h3>Cakes</h3>
+            <p>From regular cakes to gluten-free cakes; there's something for everyone.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/tarts.jpg" alt="">
+            <h3>Pies & Tarts</h3>
+            <p>Fruit Tart, Chicken Pie, Cheese Tart - there's so much to choose from!</p>
+        </div>
+    </div>
+</section>
+
