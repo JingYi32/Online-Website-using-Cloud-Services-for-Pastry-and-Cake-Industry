@@ -23,16 +23,23 @@
     <div class="heading">
         <h3>Order @Model.order.OrderID</h3>
     </div>
-    @*@if (User.IsInRole("Admin"))*@
-    @*{*@
-    <a asp-action="editOrderPage" asp-route-OrderID="@Model.order.OrderID">Edit</a>
-    @*}*@
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-action="editOrderPage" asp-route-OrderID="@Model.order.OrderID">Edit</a>
+    }
     <section class="orderItem">
         <table width="100%">
             <tr>
                 <th width="20%">ID</th>
                 <td width="80%"> @Model.order.OrderID</td>
             </tr>
+            @if (User.IsInRole("Admin"))
+            {
+                <tr>
+                    <th width="20%">User ID</th>
+                    <td width="80%"> @Model.order.UserID</td>
+                </tr>
+            }
             <tr>
                 <th width="20%">Placed On</th>
                 <td width="80%"> @Model.order.DatePlacedOn</td>

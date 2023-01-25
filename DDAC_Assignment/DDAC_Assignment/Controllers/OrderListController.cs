@@ -1,31 +1,44 @@
 ﻿using DDAC_Assignment.Data;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using DDAC_Assignment.Models;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using System;
+using DDAC_Assignment.Areas.Identity.Data;
 
 namespace DDAC_Assignment.Controllers
 {
     public class OrderListController : Controller
     {
         private readonly DDAC_AssignmentContext _context;
+        private readonly UserManager<RT_Pastry_User> _userManager;
 
-        public OrderListController(DDAC_AssignmentContext context)
+        public OrderListController(DDAC_AssignmentContext context, UserManager<RT_Pastry_User> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         public async Task<IActionResult> Index()
         {
-            var order1 = from o in _context.Order
-                         select o;
-            var order = await _context.Order.ToListAsync();
-            return View(order);
+
+            if (User.IsInRole("Admin"))
+            {
+                var order = await _context.Order.ToListAsync();
+                return View(order);
+            }
+            else
+            {
+                var order = from o in _context.Order
+                            select o;
+                order = order.Where(o => o.UserID.Equals(_userManager.GetUserId(User)));
+                return View(await order.ToListAsync());
+            }
+            
+            
+            
         }
 
         //[Authorize(Roles = "Admin")]

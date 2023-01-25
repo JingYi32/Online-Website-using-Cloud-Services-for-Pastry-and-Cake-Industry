@@ -11,7 +11,7 @@ namespace DDAC_Assignment.Models
         [Key]
         public int OrderID { get; set; }
         public DateTime DatePlacedOn { get; set; }
-        public int UserID { get; set; }
+        public string UserID { get; set; }
         public decimal TotalPrice { get; set; }
         public string PaymentMethod { get; set; }
         public string PaymentStatus { get; set; }
