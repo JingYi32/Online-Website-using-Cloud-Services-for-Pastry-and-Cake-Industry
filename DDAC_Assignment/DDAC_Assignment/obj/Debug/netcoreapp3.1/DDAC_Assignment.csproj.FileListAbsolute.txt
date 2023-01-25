@@ -562,3 +562,13 @@ D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Deb
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\AWSXRayRecorder.Handlers.AspNetCore.dll
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\AWSXRayRecorder.Handlers.AwsSdk.dll
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\obj\Debug\netcoreapp3.1\DDAC_Assignment.csproj.AssemblyReference.cache
+C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\Amazon.Lambda.SQSEvents.dll
+C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\AWSSDK.RDS.dll
+C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\AWSSDK.S3.dll
+C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\AWSXRayRecorder.Core.dll
+C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\AWSXRayRecorder.Handlers.AspNetCore.dll
+C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\AWSXRayRecorder.Handlers.AwsSdk.dll
+C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.EntityFramework.dll

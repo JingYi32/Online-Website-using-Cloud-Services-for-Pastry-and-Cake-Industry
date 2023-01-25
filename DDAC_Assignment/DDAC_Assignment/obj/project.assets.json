@@ -5,10 +5,14 @@
       "Amazon.Lambda.SQSEvents/2.1.0": {
         "type": "package",
         "compile": {
-          "lib/netcoreapp3.1/Amazon.Lambda.SQSEvents.dll": {}
+          "lib/netcoreapp3.1/Amazon.Lambda.SQSEvents.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/Amazon.Lambda.SQSEvents.dll": {}
+          "lib/netcoreapp3.1/Amazon.Lambda.SQSEvents.dll": {
+            "related": ".xml"
+          }
         }
       },
       "AWSSDK.Core/3.7.103.22": {
@@ -30,10 +34,14 @@
           "AWSSDK.Core": "[3.7.103.22, 4.0.0)"
         },
         "compile": {
-          "lib/netcoreapp3.1/AWSSDK.RDS.dll": {}
+          "lib/netcoreapp3.1/AWSSDK.RDS.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/AWSSDK.RDS.dll": {}
+          "lib/netcoreapp3.1/AWSSDK.RDS.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "AWSSDK.S3/3.7.101.60": {
@@ -42,10 +50,14 @@
           "AWSSDK.Core": "[3.7.103.22, 4.0.0)"
         },
         "compile": {
-          "lib/netcoreapp3.1/AWSSDK.S3.dll": {}
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/AWSSDK.S3.dll": {}
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "AWSSDK.SimpleNotificationService/3.7.100.60": {
@@ -71,10 +83,14 @@
           "Amazon.Lambda.SQSEvents": "2.1.0"
         },
         "compile": {
-          "lib/netcoreapp3.1/AWSXRayRecorder.Core.dll": {}
+          "lib/netcoreapp3.1/AWSXRayRecorder.Core.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/AWSXRayRecorder.Core.dll": {}
+          "lib/netcoreapp3.1/AWSXRayRecorder.Core.dll": {
+            "related": ".xml"
+          }
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -86,10 +102,14 @@
           "AWSXRayRecorder.Core": "2.13.0"
         },
         "compile": {
-          "lib/netcoreapp3.1/AWSXRayRecorder.Handlers.AspNetCore.dll": {}
+          "lib/netcoreapp3.1/AWSXRayRecorder.Handlers.AspNetCore.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/AWSXRayRecorder.Handlers.AspNetCore.dll": {}
+          "lib/netcoreapp3.1/AWSXRayRecorder.Handlers.AspNetCore.dll": {
+            "related": ".xml"
+          }
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -101,10 +121,14 @@
           "AWSXRayRecorder.Core": "2.13.0"
         },
         "compile": {
-          "lib/netstandard2.0/AWSXRayRecorder.Handlers.AwsSdk.dll": {}
+          "lib/netstandard2.0/AWSXRayRecorder.Handlers.AwsSdk.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/AWSXRayRecorder.Handlers.AwsSdk.dll": {}
+          "lib/netstandard2.0/AWSXRayRecorder.Handlers.AwsSdk.dll": {
+            "related": ".xml"
+          }
         }
       },
       "EntityFramework/6.1.0": {
