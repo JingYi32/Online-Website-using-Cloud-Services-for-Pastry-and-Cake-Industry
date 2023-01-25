@@ -82,32 +82,11 @@ namespace DDAC_Assignment.Areas.Identity.Pages.Account
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
 
-                var users = from m in _userManager.Users
-                            where m.Email.Equals(Input.Email)
-                            select m.UserRole;
-
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    //return LocalRedirect(returnUrl);
-                    foreach (string UserRole in users)
-                    {
-                        if (String.IsNullOrEmpty(UserRole))
-                            return RedirectToAction("Index", "Home");
-                        else if (UserRole.Equals("Admin"))
-                            return RedirectToAction("Index", "Home");
-                        else
-                            return Redirect("~/Identity/Account/Manage/Index");
-                    }
-                }
-                if (result.RequiresTwoFactor)
-                {
-                    return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe });
-                }
-                if (result.IsLockedOut)
-                {
-                    _logger.LogWarning("User account locked out.");
-                    return RedirectToPage("./Lockout");
+                    return RedirectToAction("Index", "Home");
+                       
                 }
                 else
                 {

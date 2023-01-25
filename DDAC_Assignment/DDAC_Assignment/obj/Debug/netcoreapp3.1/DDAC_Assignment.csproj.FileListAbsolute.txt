@@ -555,3 +555,7 @@ D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Deb
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\EntityFramework.dll
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
 D:\User\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Sydney\OneDrive - Asia Pacific University\Documents\GitHub\DDAC_Assignment\DDAC_Assignment\DDAC_Assignment\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.EntityFramework.dll
