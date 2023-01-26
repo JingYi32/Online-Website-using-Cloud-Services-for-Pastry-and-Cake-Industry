@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\Updated_DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment.csproj": {}
+    "D:\\User\\Documents\\GitHub\\DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\Updated_DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment.csproj": {
+    "D:\\User\\Documents\\GitHub\\DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Updated_DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment.csproj",
+        "projectUniqueName": "D:\\User\\Documents\\GitHub\\DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment.csproj",
         "projectName": "DDAC_Assignment",
-        "projectPath": "C:\\Users\\User\\source\\repos\\Updated_DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\Updated_DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment\\obj\\",
+        "projectPath": "D:\\User\\Documents\\GitHub\\DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment.csproj",
+        "packagesPath": "C:\\Users\\jingy\\.nuget\\packages\\",
+        "outputPath": "D:\\User\\Documents\\GitHub\\DDAC_Assignment\\DDAC_Assignment\\DDAC_Assignment\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jingy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -109,7 +111,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
         }
       }
     }
