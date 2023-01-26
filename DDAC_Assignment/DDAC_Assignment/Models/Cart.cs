@@ -12,7 +12,7 @@ namespace DDAC_Assignment.Models
         public int CartID { get; set; }
 
         [Required]
-        public int UserID { get; set; }
+        public string UserID { get; set; }
 
         [Required]
         public int ProductID { get; set; }

@@ -8,6 +8,8 @@ using DDAC_Assignment.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
 using System.Data;
+using Microsoft.AspNetCore.Identity;
+using DDAC_Assignment.Areas.Identity.Data;
 
 namespace DDAC_Assignment.Controllers
 {
@@ -15,11 +17,13 @@ namespace DDAC_Assignment.Controllers
     {
         //Create variable to link to db
         private readonly DDAC_AssignmentContext _context;
+        private readonly UserManager<RT_Pastry_User> _userManager;
 
         //Constructor to initialize the db connection
-        public CartController(DDAC_AssignmentContext context)
+        public CartController(DDAC_AssignmentContext context, UserManager<RT_Pastry_User> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         [Authorize(Roles = "Customer")]
@@ -29,7 +33,7 @@ namespace DDAC_Assignment.Controllers
             var temp = 0m;
             foreach (var item in cartlist)
             {
-                if (item.UserID == 123)
+                if (item.UserID == _userManager.GetUserId(User))
                 {
                     temp = temp + item.ProductSubTotal;
                 }

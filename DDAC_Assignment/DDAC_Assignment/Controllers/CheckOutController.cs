@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using DDAC_Assignment.Data;
 using DDAC_Assignment.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using DDAC_Assignment.Areas.Identity.Data;
 
 namespace DDAC_Assignment.Controllers
 {
@@ -13,11 +15,13 @@ namespace DDAC_Assignment.Controllers
     {
         //Create variable to link to db
         private readonly DDAC_AssignmentContext _context;
+        private readonly UserManager<RT_Pastry_User> _userManager;
 
         //Constructor to initialize the db connection
-        public CheckOutController(DDAC_AssignmentContext context)
+        public CheckOutController(DDAC_AssignmentContext context, UserManager<RT_Pastry_User> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         public async Task<IActionResult> Index()
@@ -26,7 +30,7 @@ namespace DDAC_Assignment.Controllers
             var temp = 0m;
             foreach(var item in cartlist)
             {
-                if(item.UserID == 123)
+                if(item.UserID == _userManager.GetUserId(User))
                 {
                     temp = temp + item.ProductSubTotal;
                 }
@@ -40,13 +44,13 @@ namespace DDAC_Assignment.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CheckOut(Order order)
         {
-            order.UserID = "123";
+            order.UserID = _userManager.GetUserId(User);
 
             var cartlist = await _context.Cart.ToListAsync();
             var total = 0m;
             foreach (var item in cartlist)
             {
-                if (item.UserID == 123)
+                if (item.UserID == _userManager.GetUserId(User))
                 {
                     total = total + item.ProductSubTotal;
                 }
@@ -67,7 +71,7 @@ namespace DDAC_Assignment.Controllers
             var newOrderID = new int();
             foreach (var item in orderlist)
             {
-                if (item.UserID == 123.ToString())
+                if (item.UserID == _userManager.GetUserId(User))
                 {
                     newOrderID = item.OrderID;
                 }
@@ -76,7 +80,7 @@ namespace DDAC_Assignment.Controllers
             //Remove all from cart
             foreach (var item in cartlist)
             {
-                if (item.UserID == 123)
+                if (item.UserID == _userManager.GetUserId(User))
                 {
                     _context.OrderProduct.Add(new OrderProduct
                     {
