@@ -36,6 +36,7 @@ namespace DDAC_Assignment.Controllers
                 }
             }
             ViewBag.total = temp;
+            ViewBag.userid = _userManager.GetUserId(User);
             return View(cartlist);
         }
 
@@ -100,27 +101,6 @@ namespace DDAC_Assignment.Controllers
 
             await _context.SaveChangesAsync();
             return RedirectToAction("Index", "Cart");
-
-            //If form no issue, proceed
-            /*if (ModelState.IsValid)
-            {
-                _context.Order.Add(new Order{
-                    DatePlacedOn = DateTime.Now,
-                    UserID = "123",
-                    TotalPrice = 100,
-                    PaymentMethod = "Payment",
-                    PaymentStatus = "Completed",
-                    DeliveryStatus = "Pending",
-                    DeliveryContact = "0123208378",
-                    DeliveryAddress = "Some address",
-                    EstimatedArrivalDate = currentDate.AddMinutes(30)
-                }); //Add
-                await _context.SaveChangesAsync(); //Save
-                return RedirectToAction("Index", "Cart");
-            }*/
-
-            /*//If form have issue, send back with error message
-            return View("Index", cartlist);*/
         }
     }
 }
