@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using DDAC_Assignment.Data;
 using DDAC_Assignment.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using DDAC_Assignment.Areas.Identity.Data;
 
 namespace DDAC_Assignment.Controllers
 {
@@ -13,11 +15,13 @@ namespace DDAC_Assignment.Controllers
     {
         //Create variable to link to db
         private readonly DDAC_AssignmentContext _context;
+        private readonly UserManager<RT_Pastry_User> _userManager;
 
         //Constructor to initialize the db connection
-        public MenuController(DDAC_AssignmentContext context)
+        public MenuController(DDAC_AssignmentContext context, UserManager<RT_Pastry_User> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         public async Task<IActionResult> Index(string searchString)
@@ -38,6 +42,7 @@ namespace DDAC_Assignment.Controllers
         public async Task<IActionResult> processCart(Cart cart)
         {
             cart.ProductSubTotal = cart.ProductPrice * cart.ProductQuantity;
+            cart.UserID = _userManager.GetUserId(User);
 
             //If form no issue, proceed
             if (ModelState.IsValid)

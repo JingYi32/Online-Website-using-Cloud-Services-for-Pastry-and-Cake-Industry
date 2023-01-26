@@ -39,6 +39,7 @@ namespace DDAC_Assignment.Controllers
                 }
             }
             ViewBag.total = temp;
+            ViewBag.userid = _userManager.GetUserId(User);
             return View(cartlist);
         }
 

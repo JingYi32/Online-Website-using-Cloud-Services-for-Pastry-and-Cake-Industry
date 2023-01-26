@@ -19,7 +19,7 @@
             @foreach (var singleCart in Model)
             {
                 //Display current User's Cart
-                if (singleCart.UserID == "123")
+                if (singleCart.UserID == @ViewBag.userid)
                 {
                     <form action="" method="post" class="box">
                         <input type="hidden" name="CartID" value="@singleCart.CartID">

@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using System.IO;
 using Microsoft.AspNetCore.Http;
 using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DDAC_Assignment.Controllers
 {
@@ -48,6 +49,7 @@ namespace DDAC_Assignment.Controllers
             return keys;
         }
 
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
 
@@ -56,6 +58,7 @@ namespace DDAC_Assignment.Controllers
         }
 
         //Funtion: Load insert page
+        [Authorize(Roles = "Admin")]
         public IActionResult AddProduct()
         {
             return View();
@@ -93,23 +96,8 @@ namespace DDAC_Assignment.Controllers
             _context.Product.Add(product); 
             await _context.SaveChangesAsync(); 
             return RedirectToAction("Index", "Products");
-
-            /*//If form no issue, proceed
-            if (ModelState.IsValid)
-            {
-                _context.Product.Add(product); //Add
-                await _context.SaveChangesAsync(); //Save
-                return RedirectToAction("Index", "Products");
-            }
-            else
-            {
-                return NotFound();
-                return View("AddProduct", product);
-            }*/
-
-            /*//If form have issue, send back with error message
-            return View("AddProduct", product);*/
         }
+
 
         public async Task<IActionResult> deleteAction(int ProductID)
         {
@@ -131,30 +119,5 @@ namespace DDAC_Assignment.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
-        /*//Function: Load an edit page for product information
-        public async Task<IActionResult> editAction(int ProductID)
-        {
-            if (ProductID == null)
-            {
-                return NotFound();
-            }
-            return View(await _context.Product.FindAsync(ProductID)); 
-        }
-
-        //Function: Process edit page information
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> processEditPage(Product product)
-        {
-            if (ModelState.IsValid) //Form is valid
-            {
-                _context.Product.Update(product);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index", "Products",
-                    new { msg = "Product information of ID " + product.ProductID + " is updated now!" });
-            }
-            return View("editAction", product); //Form is having error
-        }*/
     }
 }
